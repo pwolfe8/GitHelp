@@ -88,6 +88,28 @@
 - delete your stash
   - `git stash drop`
 
+## Tagging
+tagging helps you label your commits as certain product releases, etc.
+
+
+Creating a local tag: 
+- `git tag -a v1.1 -m "this feature was when we added the blinky leds make people think people our product is cool"`
+
+List local tags: 
+- `git tag`
+
+See more info about a specific tag
+`git show v1.1`
+
+Tag a previous commit (where abc1234 is the start of your commit checksum you want to tag):
+- `git tag -a v1.0 abc1234 -m "Original Product Release"`
+
+Push a tag to remote
+- `git push origin v1.1`
+
+Or push all tags
+- `git push --tags`
+
 
 # Terminology and References
 
